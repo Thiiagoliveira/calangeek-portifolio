@@ -1,0 +1,165 @@
+
+<router-outlet></router-outlet>
+aqui em cima
+
+<!-- <div style="background-color: var(--primary); margin: 10px">
+  <div class="toolbar-grid">
+    <div class="box box-a" style="background-color: tomato">a</div>
+    <div class="box box-b" style="background-color: darkcyan">b</div>
+    <div class="box box-c" style="background-color: yellowgreen">c</div>
+    <div class="box box-d" style="background-color: tomato">d</div>
+    <div class="box box-e" style="background-color: darkcyan">e</div>
+    <div class="box box-f" style="background-color: yellowgreen">f</div>
+    <div class="box box-g" style="background-color: tomato">g</div>
+    <div class="box" style="background-color: darkcyan">h</div>
+    <div class="box" style="background-color: yellowgreen">i</div>
+    <div class="box" style="background-color: tomato">j</div>
+    <div class="box" style="background-color: darkcyan">k</div>
+    <div class="box" style="background-color: yellowgreen">l</div>
+  </div>
+
+  <div class="box-container" style="border-top: 1em solid white">
+    <div class="box box-1" style="background-color: tomato">box-1</div>
+    <div class="box box-2" style="background-color: darkcyan">box-2</div>
+    <div class="box box-3" style="background-color: yellowgreen">box-3</div>
+    <div class="box box-4" style="background-color: aquamarine">box-4</div>
+  </div>
+</div> -->
+
+<!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+
+
+    <mat-toolbar color="primary">
+      <mat-toolbar-row class="navbar">
+        <button mat-icon-button>
+          <!-- (click)="sidenav.toggle()" -->
+          <mat-icon >menu</mat-icon>
+        </button>
+        <div class="brand">
+          <img src="../assets/images/calangeek_brand.svg" />
+          <div class="brand__child-title">
+            <span style="color: var(--goldenOak)">Calan</span>
+            <span>geek</span>
+          </div>
+        </div>
+        <div class="menu">
+          <ul class="items">
+            <li style="margin-right: 5px;">
+              <span>aaaaa</span>
+              <span></span>
+            </li>
+
+            <li>
+              <span style="font-size: 0.8em; color: grey">bbbb</span>
+            </li>
+          </ul>
+        </div>
+        <span class="menu-spacer"></span>
+        <div>
+          <span></span>
+          <div>fdsafdafafda</div>
+          <mat-icon class="example-icon" style="color: var(--blue300)"
+            >favorite</mat-icon
+          >
+          <mat-icon class="example-icon" style="color: white">delete</mat-icon>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-tab-group>
+      <mat-tab label="First">
+        <div style="padding: 1em">
+          <div class="mat-headline">Paleta de cores</div>
+          <div>
+            <div
+              style="
+                margin-bottom: 2px;
+                height: 30px;
+                width: 70px;
+                background-color: var(--outroAzul);
+              "
+            ></div>
+
+            blueGray900 ~ azzurro-polizia
+            <div style="display: flex; flex-direction: row">
+              <div
+                class="color-pallet"
+                style="background-color: var(--blueGray900)"
+              ></div>
+              <div
+                class="color-pallet"
+                style="background-color: var(--azzurro-polizia)"
+              ></div>
+              <!-- <div class="color-pallet" style="background-color: var(--yankees-blue);"></div> -->
+            </div>
+            blueGray800 ~ benjamin-moore-deep-royal
+            <div style="display: flex; flex-direction: row">
+              <div
+                class="color-pallet"
+                style="background-color: var(--blueGray800)"
+              ></div>
+              <div
+                class="color-pallet"
+                style="background-color: var(--benjamin-moore-deep-royal)"
+              ></div>
+            </div>
+            <div
+              style="
+                margin-bottom: 2px;
+                height: 30px;
+                width: 70px;
+                background-color: var(--blueGray700);
+              "
+            ></div>
+            2 3
+            <div
+              style="
+                margin-bottom: 2px;
+                height: 30px;
+                width: 70px;
+                background-color: var(--cinzaAzulado);
+              "
+            ></div>
+            <div
+              style="
+                margin-bottom: 2px;
+                height: 30px;
+                width: 70px;
+                background-color: var(--cinzaAzuladoTitle);
+              "
+            ></div>
+            <div
+              style="
+                margin-bottom: 2px;
+                height: 30px;
+                width: 70px;
+                background-color: var(--azulClaro);
+              "
+            ></div>
+            <div
+              style="
+                margin-bottom: 2px;
+                height: 30px;
+                width: 70px;
+                background-color: var(--azulClaroBorda);
+              "
+            ></div>
+          </div>
+          <!-- --outroAzul: #011825;
+          --azulMarinho: #0f172a;
+          --azulMarinhoClaro: #1e293b;
+          --azulClaro: #93c5fd;
+          --azulClaroBorda: #bfdbfe;
+          --cinzaAzulado: #64748b;
+          --cinzaAzuladoTitle: #94a3b8;
+          --marcado: #334155; -->
+        </div>
+      </mat-tab>
+      <mat-tab label="Second"> Content 2 </mat-tab>
+      <mat-tab label="Third"> Content 3 </mat-tab>
+    </mat-tab-group>
+
+    <button mat-button color="primary">Primary</button>
+    <button mat-raised-button color="primary">Primary</button>

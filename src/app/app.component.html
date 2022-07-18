@@ -1,4 +1,29 @@
-<div>init commit</div>
-<button mat-button color="primary">Primary</button>
-<button mat-raised-button color="primary">Primary</button>
-<router-outlet></router-outlet>
+<!-- <app-sidebar></app-sidebar> -->
+<!-- <app-table></app-table> -->
+<!-- <app-dashboard></app-dashboard> -->
+<!-- <app-address-form></app-address-form> -->
+<!-- <app-tree></app-tree> -->
+<!-- <app-drag-drop></app-drag-drop> -->
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <button mat-raised-button color="primary" >Action</button> -->
+
+<!-- <mat-toolbar class="navbar-teste" color="primary">
+  <div >dfsafafda</div>
+  <div>
+    <span>Home</span>
+    <span>About</span>
+    <span>Services</span>
+  </div>
+</mat-toolbar> -->
+
+<mat-sidenav-container>
+  <!-- mode="over,push,side"  -->
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened">Sidnav</mat-sidenav>
+  <mat-sidenav-content>Main
+    <button (click)="opened=!opened">Toggle opened</button>
+    <button (click)="sidenav.open()">open</button>
+    <button (click)="sidenav.close()">close</button>
+    <button (click)="sidenav.toggle()">toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
