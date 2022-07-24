@@ -1,0 +1,22 @@
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  background-color: lightcoral !important;
+  width: 200px;
+}
+
+.background-1 {
+  background-image: url("../../../assets/images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  height: 100vh;
+}
+
+.background-2 {
+  background-image: url("../../../assets/images/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  height: 100vh;
+}

@@ -1,0 +1,79 @@
+<mat-sidenav-container *ngIf="isHandset$ | async as isHandset; else notHandset">
+  <mat-sidenav
+    #drawer
+    fixedInViewport
+    [mode]="isHandset ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Início</a>
+      <a mat-list-item href="#">Nossa História</a>
+      <a mat-list-item href="#">Casamento</a>
+      <a mat-list-item href="#">Lista de Presentes</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span style="display: flex; align-items: center; justify-content: center">
+        Vanessinha
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          style="color: red; margin: 0 8px"
+          >favorite</mat-icon
+        >
+        Thiago
+      </span>
+    </mat-toolbar>
+    <app-dashboard></app-dashboard>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<ng-template #notHandset>
+  <div class="background-1">
+    <app-toolbar></app-toolbar>
+    <div style="min-height: calc(100vh - 64px)"></div>
+    <div style="min-height: 500px; padding: 5em;">
+      <h1 style="text-align: center;">Nossa História</h1>
+      <div style="text-align: center;">
+        	<p>Lorem ipsum placerat tempor netus magna senectus aliquam auctor, sem vitae est quam sodales felis ullamcorper, augue faucibus ullamcorper curabitur quis in metus. pulvinar interdum hac tempor felis habitant aliquam etiam augue, netus pharetra augue malesuada donec vel felis cubilia nostra, fringilla aenean tristique phasellus magna sociosqu eleifend. purus tempor phasellus scelerisque feugiat himenaeos enim eget, in lectus leo lectus nunc blandit nostra ligula, nulla ullamcorper conubia tempor etiam laoreet. sollicitudin dapibus consequat aliquam commodo vulputate leo euismod iaculis dictum quisque aliquet, mattis convallis adipiscing nullam venenatis senectus ac quisque nisi aliquam, curabitur sagittis netus litora arcu per a blandit cursus imperdiet. </p>
+          <p>Lectus rhoncus lorem elementum curabitur aliquam ut vulputate phasellus, ut interdum ligula fusce sed quisque pellentesque, leo hac vel vestibulum odio egestas nunc. senectus risus consequat ullamcorper placerat fermentum etiam dictumst eu consectetur pretium, odio fames elementum rhoncus porttitor litora venenatis quisque pretium litora, eleifend rutrum dictumst metus enim etiam tempor nullam sed. diam vulputate tristique nisi vivamus eu suspendisse praesent ipsum, fusce congue ac tristique morbi suscipit lacinia felis fusce, aliquet massa quam eget consectetur per eleifend. placerat velit cubilia vel ac nec pretium sem rhoncus elit, hac praesent neque conubia turpis congue est. </p>
+          <p>Placerat vehicula ipsum viverra aenean iaculis vitae nibh viverra pulvinar laoreet praesent, malesuada dictumst donec quis a etiam vulputate sodales eget iaculis, eros ad pulvinar tristique cras primis senectus commodo per accumsan. felis erat elit metus vivamus venenatis rhoncus mauris id, morbi commodo per molestie etiam augue gravida, a scelerisque rhoncus dolor molestie id curae. interdum aptent in semper erat purus erat, urna aliquet urna primis pellentesque viverra elit, quis neque volutpat inceptos cubilia. semper varius porttitor commodo placerat nisl ad class felis sit, conubia lacus rutrum ultricies suscipit fusce magna scelerisque nam, porttitor donec eleifend praesent porta mi nec lobortis. </p>
+          <p>Habitant est leo nostra dapibus potenti enim, integer habitasse tempus aenean dui, tellus accumsan urna sapien primis. diam laoreet quis tristique convallis dictum integer sed donec, eu mollis nunc a fames quisque lacus lobortis amet, senectus integer ad dictumst blandit dapibus mattis. vitae ut nisi felis sagittis proin pharetra eleifend, conubia nam blandit placerat in gravida. consequat class mattis pellentesque scelerisque faucibus tortor fames vivamus lobortis, lacinia dictum felis id imperdiet primis dictum dictumst habitasse proin, sem fringilla malesuada ultricies ut metus lobortis pharetra nunc, erat curabitur posuere sed quisque faucibus bibendum leo. </p>
+          <p>Dictumst primis nulla gravida sapien suspendisse consectetur senectus, dictum turpis per volutpat lorem habitant ac, hac velit odio senectus aliquam sem. hac feugiat et urna ultricies sodales pellentesque mollis feugiat ad elementum, nam est id laoreet enim ac cubilia pretium ullamcorper, curabitur cursus quam ullamcorper et adipiscing quisque torquent scelerisque. sociosqu nam molestie iaculis dictum ante sagittis faucibus nisl, porta phasellus nulla aliquet ullamcorper purus interdum justo, aenean lobortis inceptos cubilia pellentesque vitae etiam. lacus rutrum class eros proin sollicitudin pretium purus, accumsan massa est auctor class sem, senectus aliquam eget laoreet mi interdum. </p>
+          <p>Volutpat porttitor per augue aenean aliquam eros potenti magna, lacinia dictum nisi diam sed nostra.   </p>
+      </div>
+    </div>
+    <div  style="min-height: 500px; padding: 5em; background-color: #7b919f; color: white;">
+      <h1 style="text-align: center; ">Casamento</h1>
+      <div style="display: flex; margin-top: 3em;">
+        <img src="../../../assets/images/background2.jpg" height="450px" alt="">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 20px; min-height: 450px;">
+          <h2>sobre</h2>
+          <p>Lectus rhoncus lorem elementum curabitur aliquam ut vulputate phasellus, ut interdum ligula fusce sed quisque pellentesque, leo hac vel vestibulum odio egestas nunc. senectus risus consequat ullamcorper placerat fermentum etiam dictumst eu consectetur pretium, odio fames elementum rhoncus porttitor litora venenatis quisque pretium litora, eleifend rutrum dictumst metus enim etiam tempor nullam sed. diam vulputate tristique nisi vivamus eu suspendisse praesent ipsum, fusce congue ac tristique morbi suscipit lacinia felis fusce, aliquet massa quam eget consectetur per eleifend. placerat velit cubilia vel ac nec pretium sem rhoncus elit, hac praesent neque conubia turpis congue est. </p>
+          <p>Placerat vehicula ipsum viverra aenean iaculis vitae nibh viverra pulvinar laoreet praesent, malesuada dictumst donec quis a etiam vulputate sodales eget iaculis, eros ad pulvinar tristique cras primis senectus commodo per accumsan. felis erat elit metus vivamus venenatis rhoncus mauris id, morbi commodo per molestie etiam augue gravida, a scelerisque rhoncus dolor molestie id curae. interdum aptent in semper erat purus erat, urna aliquet urna primis pellentesque viverra elit, quis neque volutpat inceptos cubilia. semper varius porttitor commodo placerat nisl ad class felis sit, conubia lacus rutrum ultricies suscipit fusce magna scelerisque nam, porttitor donec eleifend praesent porta mi nec lobortis. </p>
+        </div>
+      </div>
+
+      <div style="display: flex; margin-top: 3em;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 20px; min-height: 450px;">
+          <h2>sobre</h2>
+          <p>Lectus rhoncus lorem elementum curabitur aliquam ut vulputate phasellus, ut interdum ligula fusce sed quisque pellentesque, leo hac vel vestibulum odio egestas nunc. senectus risus consequat ullamcorper placerat fermentum etiam dictumst eu consectetur pretium, odio fames elementum rhoncus porttitor litora venenatis quisque pretium litora, eleifend rutrum dictumst metus enim etiam tempor nullam sed. diam vulputate tristique nisi vivamus eu suspendisse praesent ipsum, fusce congue ac tristique morbi suscipit lacinia felis fusce, aliquet massa quam eget consectetur per eleifend. placerat velit cubilia vel ac nec pretium sem rhoncus elit, hac praesent neque conubia turpis congue est. </p>
+          <p>Placerat vehicula ipsum viverra aenean iaculis vitae nibh viverra pulvinar laoreet praesent, malesuada dictumst donec quis a etiam vulputate sodales eget iaculis, eros ad pulvinar tristique cras primis senectus commodo per accumsan. felis erat elit metus vivamus venenatis rhoncus mauris id, morbi commodo per molestie etiam augue gravida, a scelerisque rhoncus dolor molestie id curae. interdum aptent in semper erat purus erat, urna aliquet urna primis pellentesque viverra elit, quis neque volutpat inceptos cubilia. semper varius porttitor commodo placerat nisl ad class felis sit, conubia lacus rutrum ultricies suscipit fusce magna scelerisque nam, porttitor donec eleifend praesent porta mi nec lobortis. </p>
+        </div>
+        <img src="../../../assets/images/background2.jpg" height="450px" alt="">
+      </div>
+    </div>
+    <app-dashboard></app-dashboard>
+  </div>
+</ng-template>

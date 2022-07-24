@@ -7,17 +7,8 @@
 <!-- <router-outlet></router-outlet> -->
 
 <!-- <button mat-raised-button color="primary" >Action</button> -->
-
-<!-- <mat-toolbar class="navbar-teste" color="primary">
-  <div >dfsafafda</div>
-  <div>
-    <span>Home</span>
-    <span>About</span>
-    <span>Services</span>
-  </div>
-</mat-toolbar> -->
-<!-- [(opened)]="opened" -->
-<mat-sidenav-container *ngIf="isHandset$ | async as isHandset; else notHandset">
+<router-outlet></router-outlet>
+<!-- <mat-sidenav-container *ngIf="isHandset$ | async as isHandset; else notHandset">
   <mat-sidenav #drawer
     fixedInViewport
     [mode]="isHandset ? 'over' : 'side'"
@@ -53,6 +44,10 @@
   </mat-toolbar>
   <app-dashboard></app-dashboard>
 </ng-template>
+
+-->
+
+
 
 <!--     Main
     mode="over, side ou push"

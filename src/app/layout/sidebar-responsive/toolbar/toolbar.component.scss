@@ -1,0 +1,67 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  //background-color: var(--blueGray900);
+
+  .brand {
+    display: flex;
+    img {
+      //filter: invert(.7);
+      //filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+      fill: "#fff";
+      height: 42px;
+    }
+
+    &__child-title {
+      font-family: "ancenSolutip";
+      font-size: 1.4em;
+      transform: rotate(-8deg);
+      color: white;
+      display: flex;
+      align-items: flex-start;
+      margin-left: 0.3em;
+      margin-top: 0.17em;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      margin: 0 1em;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+      &.selected {
+        border-bottom: 3px solid white;
+        border-radius: 0 0 3px 3px;
+      }
+    }
+  }
+
+/*   .menu {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    &__child-title {
+      font-size: 0.8em;
+    }
+
+    &__child-border {
+    }
+    border-bottom: 3px solid white;
+
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: -2px;
+    border-top-right-radius: -2px;
+  } */
+}
+
+
+.d-flex {
+  display: flex;
+}

@@ -8,9 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddressFormComponent } from './address-form/address-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { TableComponent } from './table/table.component';
 import { TreeComponent } from './tree/tree.component';
 
@@ -20,8 +18,6 @@ import { TreeComponent } from './tree/tree.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
-    DashboardComponent,
     TableComponent,
     AddressFormComponent,
     TreeComponent,
@@ -30,7 +26,7 @@ import { TreeComponent } from './tree/tree.component';
     HomeComponent,
     CoreComponent,
     TemplateComponent,
-    LayoutComponent,
+
     AuthenticationComponent,
     GuardsComponent,
     ComponentsComponent,
